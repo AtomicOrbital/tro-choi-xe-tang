@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xe Tăng</title>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div style="width: 190px; height: 190px; border: 1px solid black;">
+    <img id="tank" src="tank.png" style="position: relative; top: 0px; left: 0px;" width="19" height="19">
+  </div>
+  <table>
+    <tr>
+      <td></td>
+      <td><input type="button" value="⇧" onclick="moveUp()"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="⇦" onclick="moveLeft()"></td>
+      <td></td>
+      <td><input type="button" value="⇨" onclick="moveRight()"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="button" value="⇩" onclick="moveDown()"></td>
+      <td></td>
+    </tr>
+  </table>
+  <script>
+      document.addEventListener("keydown",moveDown)
+  </script>
+</body>
+</html>
